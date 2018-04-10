@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+<script src="videosub-0.9.9.js"></script>
+
+<div align="middle">
+<button onclick="getCurTime()" type="button">Get current time position</button>
+<button onclick="setCurTime()" type="button">Set time position to 5 seconds</button><br> 
+
+<video id="myVideo" width="80%" controls="controls">
+      <source src="yaeSearchTest.mp4" type="video/mp4">
+      <track src="yaeSearchTest.srt" kind="subtitles" srcland="ja">
+</video>
+
+
+<script>
+var vid = document.getElementById("myVideo");
+
+function getCurTime() { 
+    alert(vid.currentTime);
+} 
+
+function setCurTime() { 
+    vid.currentTime=633;
+} 
+
+</script> 
+
+</div>
+
+</body>
+</html>
